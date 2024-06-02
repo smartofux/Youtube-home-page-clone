@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Home page clone</title>
+    <link rel="stylesheet" href="yt-home.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <div class="menu-side"> 
+                <div class="menu-icon"> <svg width="24" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="#606060" />
+                    </svg> 
+                </div>
+                <a href="#" class="youtube-logo">
+                <svg width="100%" height="100%" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M25.2001 5.94795C24.9121 4.86795 24.0601 4.01595 22.9761 3.72395C21.0161 3.19995 13.1521 3.19995 13.1521 3.19995C13.1521 3.19995 5.29208 3.19995 3.32808 3.72395C2.24808 4.01195 1.39608 4.86395 1.10408 5.94795C0.580078 7.90795 0.580078 12 0.580078 12C0.580078 12 0.580078 16.092 1.10408 18.052C1.39208 19.132 2.24408 19.9839 3.32808 20.2759C5.29208 20.7999 13.1521 20.7999 13.1521 20.7999C13.1521 20.7999 21.0161 20.7999 22.9761 20.2759C24.0561 19.9879 24.9081 19.136 25.2001 18.052C25.7241 16.092 25.7241 12 25.7241 12C25.7241 12 25.7241 7.90795 25.2001 5.94795Z"
+                        fill="#FF0000" />
+                    <path d="M10.6401 15.772L17.1721 12L10.6401 8.22803V15.772Z" fill="white" />
+                    <path
+                        d="M37.0757 19.2119C36.5797 18.8759 36.2237 18.3559 36.0157 17.6479C35.8077 16.9399 35.6997 15.9999 35.6997 14.8239V13.2239C35.6997 12.0359 35.8197 11.0839 36.0597 10.3639C36.2997 9.6439 36.6757 9.1199 37.1837 8.7919C37.6917 8.4639 38.3597 8.2959 39.1877 8.2959C40.0037 8.2959 40.6557 8.4639 41.1477 8.7999C41.6397 9.1359 41.9997 9.6599 42.2277 10.3719C42.4557 11.0839 42.5677 12.0359 42.5677 13.2199V14.8199C42.5677 15.9959 42.4557 16.9399 42.2357 17.6519C42.0157 18.3639 41.6557 18.8879 41.1557 19.2159C40.6597 19.5439 39.9837 19.7119 39.1317 19.7119C38.2597 19.7159 37.5717 19.5479 37.0757 19.2119ZM39.8637 17.4839C39.9997 17.1239 40.0717 16.5359 40.0717 15.7239V12.2879C40.0717 11.4959 40.0037 10.9199 39.8637 10.5519C39.7277 10.1879 39.4837 10.0039 39.1357 10.0039C38.7997 10.0039 38.5637 10.1879 38.4237 10.5519C38.2877 10.9159 38.2157 11.4959 38.2157 12.2879V15.7239C38.2157 16.5399 38.2797 17.1279 38.4117 17.4839C38.5437 17.8439 38.7837 18.0239 39.1317 18.0239C39.4837 18.0239 39.7237 17.8439 39.8637 17.4839Z"
+                        fill="#282828" />
+                    <path
+                        d="M75.2639 14.852V15.408C75.2639 16.116 75.2839 16.644 75.3279 17C75.3679 17.352 75.4559 17.612 75.5879 17.772C75.7199 17.932 75.9239 18.016 76.1999 18.016C76.5719 18.016 76.8279 17.872 76.9639 17.584C77.0999 17.296 77.1759 16.816 77.1879 16.144L79.3279 16.268C79.3399 16.364 79.3439 16.496 79.3439 16.664C79.3439 17.684 79.0639 18.444 78.5079 18.948C77.9519 19.452 77.1639 19.704 76.1439 19.704C74.9199 19.704 74.0639 19.32 73.5719 18.552C73.0799 17.784 72.8359 16.6 72.8359 14.992V13.068C72.8359 11.412 73.0919 10.208 73.5999 9.44396C74.1079 8.68396 74.9799 8.30396 76.2159 8.30396C77.0679 8.30396 77.7199 8.45996 78.1759 8.77196C78.6319 9.08396 78.9519 9.56795 79.1399 10.228C79.3239 10.888 79.4199 11.8 79.4199 12.96V14.848H75.2639V14.852ZM75.5799 10.212C75.4559 10.368 75.3719 10.624 75.3279 10.976C75.2839 11.328 75.2639 11.868 75.2639 12.584V13.376H77.0799V12.584C77.0799 11.876 77.0559 11.34 77.0079 10.976C76.9599 10.612 76.8719 10.352 76.7479 10.204C76.6239 10.056 76.4279 9.97996 76.1639 9.97996C75.8999 9.97596 75.7039 10.056 75.5799 10.212Z"
+                        fill="#282828" />
+                    <path
+                        d="M31.0359 14.6438L28.2119 4.44785H30.6759L31.6639 9.06785C31.9159 10.2078 32.0999 11.1758 32.2199 11.9798H32.2919C32.3759 11.4038 32.5599 10.4398 32.8479 9.08385L33.8719 4.44385H36.3359L33.4799 14.6438V19.5358H31.0359V14.6438Z"
+                        fill="#282828" />
+                    <path
+                        d="M50.5799 8.51196V19.532H48.6399L48.4239 18.184H48.3719C47.8439 19.204 47.0519 19.712 45.9999 19.712C45.2679 19.712 44.7279 19.472 44.3799 18.992C44.0319 18.512 43.8599 17.764 43.8599 16.744V8.51196H46.3399V16.604C46.3399 17.096 46.3919 17.448 46.4999 17.656C46.6079 17.864 46.7879 17.972 47.0399 17.972C47.2559 17.972 47.4639 17.908 47.6599 17.776C47.8559 17.644 48.0039 17.476 48.0999 17.272V8.51196H50.5799Z"
+                        fill="#282828" />
+                    <path
+                        d="M63.3079 8.51196V19.532H61.3679L61.1519 18.184H61.0999C60.5719 19.204 59.7799 19.712 58.7279 19.712C57.9959 19.712 57.4559 19.472 57.1079 18.992C56.7599 18.512 56.5879 17.764 56.5879 16.744V8.51196H59.0679V16.604C59.0679 17.096 59.1199 17.448 59.2279 17.656C59.3359 17.864 59.5159 17.972 59.7679 17.972C59.9839 17.972 60.1919 17.908 60.3879 17.776C60.5839 17.644 60.7319 17.476 60.8279 17.272V8.51196H63.3079Z"
+                        fill="#282828" />
+                    <path d="M57.3238 6.44375H54.8598V19.5318H52.4318V6.44375H49.9678V4.44775H57.3198V6.44375H57.3238Z"
+                        fill="#282828" />
+                    <path
+                        d="M71.5197 10.2758C71.3677 9.57985 71.1277 9.07585 70.7917 8.76385C70.4557 8.45185 69.9957 8.29585 69.4077 8.29585C68.9517 8.29585 68.5277 8.42385 68.1317 8.68385C67.7357 8.93985 67.4317 9.27985 67.2157 9.69985H67.1957V3.89185H64.8037V19.5358H66.8517L67.1037 18.4918H67.1557C67.3477 18.8638 67.6357 19.1558 68.0197 19.3718C68.4037 19.5878 68.8277 19.6958 69.2957 19.6958C70.1357 19.6958 70.7517 19.3078 71.1477 18.5358C71.5437 17.7638 71.7397 16.5558 71.7397 14.9118V13.1678C71.7437 11.9358 71.6677 10.9718 71.5197 10.2758ZM69.2437 14.7718C69.2437 15.5758 69.2117 16.2038 69.1437 16.6598C69.0797 17.1158 68.9677 17.4398 68.8117 17.6318C68.6557 17.8238 68.4477 17.9198 68.1837 17.9198C67.9797 17.9198 67.7917 17.8718 67.6157 17.7758C67.4437 17.6798 67.2997 17.5358 67.1917 17.3438V11.0838C67.2757 10.7838 67.4197 10.5398 67.6237 10.3478C67.8277 10.1558 68.0477 10.0598 68.2877 10.0598C68.5397 10.0598 68.7357 10.1598 68.8717 10.3558C69.0077 10.5518 69.1037 10.8878 69.1597 11.3518C69.2117 11.8198 69.2397 12.4838 69.2397 13.3478V14.7718H69.2437Z"
+                        fill="#282828" />
+                </svg>
+
+            </a>
+
+            </div>
+
+            <form class="middle-elements">
+
+                <div class="search-bar">
+                    <input type="text" name="searchbar" id="searchbar" placeholder="Search" class="form-input">
+                    <div class="search-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path
+                            d="M12.9167 11.6667H12.2583L12.025 11.4417C12.8417 10.4917 13.3333 9.25833 13.3333 7.91667C13.3333 4.925 10.9083 2.5 7.91667 2.5C4.925 2.5 2.5 4.925 2.5 7.91667C2.5 10.9083 4.925 13.3333 7.91667 13.3333C9.25833 13.3333 10.4917 12.8417 11.4417 12.025L11.6667 12.2583V12.9167L15.8333 17.075L17.075 15.8333L12.9167 11.6667ZM7.91667 11.6667C5.84167 11.6667 4.16667 9.99167 4.16667 7.91667C4.16667 5.84167 5.84167 4.16667 7.91667 4.16667C9.99167 4.16667 11.6667 5.84167 11.6667 7.91667C11.6667 9.99167 9.99167 11.6667 7.91667 11.6667Z"
+                            fill="#606060" /> 
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="voice-search-wrap">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.2014 3.24484C10.5414 3.24484 9.20142 4.61484 9.20142 6.31484V12.1748C9.20142 13.8748 10.5414 15.2448 12.2014 15.2448C13.8614 15.2448 15.2014 13.8748 15.2014 12.1748V6.31484C15.2014 4.61484 13.8614 3.24484 12.2014 3.24484ZM18.7014 12.2448H17.7014C17.7014 15.2748 15.2314 17.7448 12.2014 17.7448C9.17142 17.7448 6.70142 15.2748 6.70142 12.2448H5.70142C5.70142 15.4848 8.09142 18.1748 11.2014 18.6548V21.2448H13.2014V18.6548C16.3114 18.1748 18.7014 15.4848 18.7014 12.2448Z"
+                            fill="currentColor" />
+                    </svg>
+
+                </div>
+            </form>
+
+            <div class="header-right-side">
+                <div class="header-actions">
+                    <div class="icon-wrap"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17 10.5V7C17 6.45 16.55 6 16 6H4C3.45 6 3 6.45 3 7V17C3 17.55 3.45 18 4 18H16C16.55 18 17 17.55 17 17V13.5L21 17.5V6.5L17 10.5ZM14 13H11V16H9V13H6V11H9V8H11V11H14V13Z"
+                            fill="#606060" /> </svg> 
+                    </div>
+
+                    <div class="icon-wrap"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 8H8V4H4V8ZM10 20H14V16H10V20ZM4 20H8V16H4V20ZM4 14H8V10H4V14ZM10 14H14V10H10V14ZM16 4V8H20V4H16ZM10 8H14V4H10V8ZM16 14H20V10H16V14ZM16 20H20V16H16V20Z"
+                            fill="#606060" /> </svg> 
+                    </div>
+                    
+                    <div class="icon-wrap"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22ZM18 16V11C18 7.93 16.36 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.63 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16Z"
+                            fill="#606060" /> </svg> 
+                    </div>
+                </div>
+                <div class="profile-photo"></div>
+            </div>
+        </header>
+    
+        <div class="sidebar">
+            
+            <div class="sidebar-links"> 
+                <a href="#" class="page-link active">
+                    <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20" fill="currentColor" />
+                    </svg>
+                    <p class="text-size-14 text-weight-regular">Home</p>
+                </a>
+                <a href="#" class="page-link">
+                    <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.57 9.81999C16.57 9.81999 17 9.99999 17.77 10.32C19.06 10.89 19.93 12.15 20 13.57C20.07 15.02 19.3 16.38 18.01 17.06L9.50995 21.56C7.67995 22.53 5.40995 21.83 4.43995 20C3.46995 18.17 4.16995 15.9 5.99995 14.93L7.41995 14.18C7.41995 14.18 6.24995 13.69 6.21995 13.68C4.92995 13.1 4.06995 11.85 3.99995 10.43C3.92995 8.97999 4.70995 7.61999 5.99995 6.93999L14.49 2.43999C16.32 1.46999 18.59 2.16999 19.56 3.99999C20.53 5.82999 19.84 8.09999 18 9.05999L16.57 9.81999ZM9.03995 20.68L17.54 16.18C18.48 15.68 19.05 14.68 19 13.62C18.95 12.56 18.29 11.62 17.3 11.21L15.5 10.47V9.25999L17.54 8.17999C18.88 7.46999 19.39 5.79999 18.68 4.45999C17.97 3.11999 16.3 2.60999 14.96 3.31999L6.45995 7.81999C5.51995 8.31999 4.94995 9.31999 4.99995 10.38C5.04995 11.44 5.70995 12.38 6.69995 12.79L7.80995 13.25L8.49995 13.53V14.74L6.45995 15.82C5.11995 16.53 4.60995 18.2 5.31995 19.54C6.02995 20.88 7.69995 21.39 9.03995 20.68Z"
+                            fill="currentColor" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.54 16.18L9.03995 20.68C7.69995 21.39 6.02995 20.88 5.31995 19.54C4.60995 18.2 5.11995 16.53 6.45995 15.82L8.49995 14.74V13.53L7.80995 13.25L6.69995 12.79C5.70995 12.38 5.04995 11.44 4.99995 10.38C4.94995 9.31999 5.51995 8.31999 6.45995 7.81999L14.96 3.31999C16.3 2.60999 17.97 3.11999 18.68 4.45999C19.39 5.79999 18.88 7.46999 17.54 8.17999L15.5 9.25999V10.47L17.3 11.21C18.29 11.62 18.95 12.56 19 13.62C19.05 14.68 18.48 15.68 17.54 16.18ZM9.99995 9.34999V14.65L15 12L9.99995 9.34999Z"
+                            fill="currentColor" />
+                    </svg>
+
+                
+                    <p class="text-size-14 text-weight-regular">Shots</p>
+                </a>
+                <a href="#" class="page-link">
+                    <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.7002 8.69995H5.3002V6.99995H18.7002V8.69995ZM17.0002 3.69995H7.0002V5.29995H17.0002V3.69995ZM20.3002 12V18.7C20.3002 19.7 19.6002 20.2999 18.7002 20.2999H5.3002C4.3002 20.2999 3.7002 19.6 3.7002 18.7V12C3.7002 11 4.4002 10.3 5.3002 10.3H18.7002C19.7002 10.3 20.3002 11.1 20.3002 12ZM15.3002 15.3L10.3002 12.6V18L15.3002 15.3Z"
+                            fill="currentColor" />
+                    </svg>
+
+                
+                    <p class="text-size-14 text-weight-regular">Subscriptions</p>
+                </a>
+            </div>
+
+            <div class="sidebar-links-wrapper">
+                <div class="page-link">
+                    <h4 class="text-weight-regular">You</h4>
+                    <div class="chevron-icon">
+                        <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.4666 8.00001L6.26659 12.2667L5.79993 11.8L9.53326 8.06668L5.79993 4.33334L6.26659 3.86668L10.4666 8.00001Z"
+                                fill="currentColor" />
+                        </svg> 
+                    </div> 
+                </div>
+                <div class="subscription-channels"> 
+                    <a href="#" class="page-link">
+                        <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2254_269)">
+                                <path
+                                    d="M4 6H2V20C2 21.1 2.9 22 4 22H18V20H4V6ZM20 2H8C6.9 2 6 2.9 6 4V16C6 17.1 6.9 18 8 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM12 14.5V5.5L18 10L12 14.5Z"
+                                    fill="currentColor" />
+                            </g>  <defs> <clipPath id="clip0_2254_269">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+    
+                        <p class="text-size-14 text-weight-regular">Your channel</p>
+                    </a>
+                    <a href="#" class="page-link">
+                        <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.396 4C7.67358 4 3.85418 7.81212 3.85418 12.5H1L4.70524 16.1782L4.74676 16.3121L8.58692 12.5H5.7535C5.7535 8.85273 8.73223 5.88545 12.4167 5.88545C16.0908 5.88545 19.0592 8.85273 19.0592 12.5C19.0592 16.1473 16.0908 19.1145 12.4167 19.1145C10.5693 19.1145 8.90867 18.3624 7.70472 17.157L6.35547 18.4964C7.9123 20.0418 10.04 21 12.4063 21C17.1598 21 21 17.1879 21 12.5C21 7.80182 17.1598 4 12.4271 4H12.396ZM11.4619 8.71879V13.4582L15.5304 15.8279L16.2154 14.6945L12.8941 12.737V8.71879H11.4619Z"
+                                fill="currentColor" />
+                        </svg>
+                
+                        <p class="text-size-14 text-weight-regular">History</p>
+                    </a>
+                    <a href="#" class="page-link">
+                        <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.4001 5.5999V18.3999H5.60014V5.5999H18.4001ZM18.4001 3.7999H5.60014C5.12275 3.7999 4.66492 3.98954 4.32735 4.32711C3.98979 4.66467 3.80014 5.12251 3.80014 5.5999V18.3999C3.78653 18.6446 3.82301 18.8894 3.90736 19.1195C3.9917 19.3495 4.12213 19.56 4.29065 19.7378C4.45917 19.9157 4.66224 20.0573 4.88741 20.154C5.11258 20.2506 5.35511 20.3003 5.60014 20.2999H18.4001C18.6535 20.3144 18.907 20.2752 19.1441 20.1849C19.3812 20.0945 19.5965 19.955 19.7759 19.7756C19.9553 19.5962 20.0947 19.3809 20.1851 19.1438C20.2754 18.9067 20.3147 18.6532 20.3001 18.3999V5.5999C20.3005 5.35486 20.2509 5.11233 20.1542 4.88716C20.0576 4.66199 19.916 4.45893 19.7381 4.2904C19.5602 4.12188 19.3498 3.99146 19.1197 3.90711C18.8897 3.82277 18.6448 3.78629 18.4001 3.7999Z"
+                                fill="currentColor" />
+                            <path d="M10.2002 9V15.5L15.2002 12.3L10.2002 9.1V9Z" fill="currentColor" />
+                        </svg>   
+                        <p class="text-size-14 text-weight-regular">Your videos</p>
+                    </a>
+                    <a href="#" class="page-link">
+                        <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.75 18.75H6.75V9.75H3.75V18.75ZM20.25 10.5C20.25 9.67 19.57 9 18.75 9H14.02L14.72 5.57L14.75 5.33C14.75 5.03 14.62 4.73 14.42 4.53L13.62 3.75L8.7 8.7C8.4 8.96 8.25 9.34 8.25 9.75V17.25C8.25 18.07 8.92 18.75 9.75 18.75H16.5C17.12 18.75 17.65 18.37 17.88 17.85L20.15 12.55C20.21 12.37 20.25 12.19 20.25 12V10.5Z"
+                                fill="currentColor" />
+                        </svg>
+    
+                        <p class="text-size-14 text-weight-regular">Liked videos</p>
+                    </a>
+                    <a href="#" class="page-link">
+                        <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.9999 3.66992C7.41992 3.66992 3.66992 7.41992 3.66992 11.9999C3.66992 16.5799 7.41992 20.3299 11.9999 20.3299C16.5799 20.3299 20.3299 16.5799 20.3299 11.9999C20.3299 7.41992 16.5799 3.66992 11.9999 3.66992ZM15.4999 15.4999L11.1699 12.8299V7.82992H12.4199V12.1699L16.1699 14.4199L15.4999 15.4999Z"
+                                fill="currentColor" />
+                        </svg>
+    
+                        <p class="text-size-14 text-weight-regular">Watch later</p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="sidebar-links-wrapper">
+                <h4 >Subscriptions</h4>
+                <div class="subscription-channels">
+                    <a href="#" class="page-link">
+                        <div class="channel-image Oktay"></div> 
+                        <p class="text-size-14 text-weight-regular">Oktay Candan</p>
+                    </a>
+
+                    <a href="#" class="page-link">
+                    <div class="channel-image Arnold"></div>
+                    <p class="text-size-14 text-weight-regular">Arnold Morrison</p>
+                    </a>
+
+                    <a href="#" class="page-link">
+                        <div class="channel-image Hudson"></div>
+                        <p class="text-size-14 text-weight-regular">Hudson Snyder</p>
+                    </a>
+
+                    <a href="#" class="page-link">
+                        <div class="channel-image Thomas"></div>
+                        <p class="text-size-14 text-weight-regular">Thomas Burns</p>
+                    </a>
+
+                    <a href="#" class="page-link">
+                            <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM17 13H13V17H11V13H7V11H11V7H13V11H17V13Z"
+                                    fill="#606060" />
+                            </svg> 
+                        <p class="text-size-14 text-weight-regular">Browse channels</p>
+                    </a>
+
+                </div>
+            </div> 
+            
+            <div class="sidebar-links-wrapper">
+                <h4>Trending</h4>
+                <div class="subscription-channels">
+                    <a href="#" class="page-link">
+                        <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.78 8.00007C21.78 8.00007 21.58 6.63007 20.98 6.03007C20.23 5.23007 19.38 5.23007 18.98 5.18007C16.2 4.98007 12 5.00007 12 5.00007C12 5.00007 7.82 4.98007 5.03 5.18007C4.63 5.23007 3.79 5.23007 3.03 6.03007C2.43 6.63007 2.23 8.00007 2.23 8.00007C2.23 8.00007 2.03 9.63007 2 11.2301V12.9301C2.03 14.5301 2.23 16.1301 2.23 16.1301C2.23 16.1301 2.43 17.5301 3.03 18.1301C3.79 18.9301 4.78 18.8901 5.23 18.9801C6.8 19.1301 11.83 19.1601 12 19.1601C12 19.1601 16.2 19.1601 19 18.9601C19.38 18.9201 20.23 18.9201 21 18.1201C21.6 17.5201 21.8 16.1401 21.8 16.1401C21.8 16.1401 22 14.5401 22 12.9201V11.2201C21.98 9.62007 21.78 8.00007 21.78 8.00007ZM9.98 15.0001V9.16007L15.33 12.1901L9.97 15.0001H9.98Z"
+                                fill="#606060" />
+                        </svg>
+
+                        <p class="text-size-14 text-weight-regular">YouTube Premium</p>
+                    </a>
+
+                    <a href="#" class="page-link">
+                    <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M22 13V8L17 5L12 8L7 5L2 8V13L12 19L22 13ZM9 11H7V13H6V11H4V10H6V8H7V10H9V11ZM15 13C14.45 13 14 12.55 14 12C14 11.45 14.45 11 15 11C15.55 11 16 11.45 16 12C16 12.55 15.55 13 15 13ZM18 11C17.45 11 17 10.55 17 10C17 9.45 17.45 9 18 9C18.55 9 19 9.45 19 10C19 10.55 18.55 11 18 11Z"
+                            fill="#606060" />
+                    </svg>
+
+                    <p class="text-size-14 text-weight-regular">Gaming</p>
+                    </a>
+
+                    <!-- <a href="#" class="page-link">
+                        <svg class="page-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.94 6.91L15.53 8.36C16.43 9.3 16.99 10.58 16.99 12C16.99 13.42 16.43 14.71 15.53 15.64L16.94 17.09C18.21 15.78 18.99 13.98 18.99 12C18.99 10.02 18.21 8.21 16.94 6.91ZM19.77 4L18.36 5.45C19.98 7.13 21 9.44 21 12.01C21 14.58 19.99 16.89 18.36 18.55L19.76 20C21.77 17.96 23 15.13 23 12.01C23 8.88 21.77 6.05 19.77 4ZM7.06 6.91C5.79 8.21 5.01 10.01 5.01 12C5.01 13.99 5.79 15.79 7.06 17.09L8.47 15.64C7.57 14.7 7.01 13.42 7.01 12C7.01 10.58 7.57 9.29 8.47 8.36L7.06 6.91ZM5.64 5.45L4.24 4C2.23 6.04 1 8.87 1 11.99C1 15.12 2.23 17.95 4.23 20L5.64 18.55C4.02 16.87 3 14.56 3 11.99C3 9.42 4.01 7.11 5.64 5.45Z"
+                                fill="#606060" />
+                            <path
+                                d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                fill="#606060" />
+                        </svg>
+
+                        <p class="text-size-14 text-weight-regular">Live</p>
+                    </a> -->
+
+                </div>
+            </div> 
+        </div>
+        <main class="main">
+            <div class="filter">
+                <div class="chip selected text-size-14">All</div>
+                <div class="chip text-size-12">Nollywood</div>
+                <div class="chip text-size-12">JavaScript</div>
+                <div class="chip text-size-12">User interface design</div>
+                <div class="chip text-size-12">Graphic design</div>
+                <div class="chip text-size-12">Romantic comedies</div>
+                <div class="chip text-size-12">Sketch comedy</div>
+                <div class="chip text-size-12">AI</div>
+                <div class="chip text-size-12">News</div>
+                <div class="chip text-size-12">Live</div>
+                <div class="chip text-size-12">Podcast</div>
+                <div class="chip text-size-12">Blessings</div>
+                <div class="chip text-size-12">Cook Studio</div>
+                <div class="chip text-size-12">Case Study</div>
+                <div class="chip text-size-12">Music Video</div>
+                <div class="scroll-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.7 12L9.39995 18.4L8.69995 17.7L14.3 12.1L8.69995 6.50002L9.39995 5.80002L15.7 12Z" fill="currentColor" />
+                    </svg>
+                </div>
+            </div>
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video1"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile1"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">4 Beautiful Soundtracks | Relaxing Piano [10min]</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video2"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile2"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">The Dark Knight Rises (2012) - Batman's Sacrifice Scene (9/10)...</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video3"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile3"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">The Dark Knight Rises (2012) - Batman's Sacrifice Scene (9/10)...</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video4"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile4"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">The Dark Knight Rises (2012) - Batman's Sacrifice Scene (9/10)...</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video5"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile5"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">The Dark Knight Rises (2012) - Batman's Sacrifice Scene (9/10)...</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video6"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile6"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">The Dark Knight Rises (2012) - Batman's Sacrifice Scene (9/10)...</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video7"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile7"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">The Dark Knight Rises (2012) - Batman's Sacrifice Scene (9/10)...</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video8"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile8"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">The Dark Knight Rises (2012) - Batman's Sacrifice Scene (9/10)...</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video9"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile9"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">The Dark Knight Rises (2012) - Batman's Sacrifice Scene (9/10)...</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video10"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile10"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">The Dark Knight Rises (2012) - Batman's Sacrifice Scene (9/10)...</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video11"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile11"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">The Dark Knight Rises (2012) - Batman's Sacrifice Scene (9/10)...</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="video-card">
+                    <a href="#" class="video-thumbnail video12"> 
+                        <div class="video-duration">54:48</div>
+                    </a>
+                    <div class="video-information">
+                        <a href="#" class="video-profile profile12"></a>
+                        <div class="information-text">
+                            <a href="#" class="video-title">The Dark Knight Rises (2012) - Batman's Sacrifice Scene (9/10)...</a>
+                            <div class="video-details">
+                                <a href="#" class="channel-name">
+                                    Jacob's Piano </a>
+                                <div class="video-interaction">
+                                    <div class="views">63M views</div>
+                                    <div class="divider"></div>
+                                    <div class="time">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+
+        </main>
+    </div>
+</body>
+</html>
