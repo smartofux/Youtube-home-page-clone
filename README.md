@@ -1,4 +1,4 @@
-# Youtube Home page clone
+# Youtube home page clone
 
 ## Description
 
