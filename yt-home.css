@@ -38,11 +38,14 @@ body{
 }
 .dashboard{
     display: grid;
+
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 240px 1fr;
+
     grid-template-areas:
     "header header"
     "sidebar main";
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 240px 1fr;
+
     height: 100vh;
     overflow: hidden;
 }
@@ -321,8 +324,7 @@ a{
     justify-content: start;
     align-items: center; 
     flex-wrap: nowrap;
-    position: relative;
-    /* overflow: hidden; */
+    position: relative; 
 }
 
 .chip{
@@ -360,8 +362,7 @@ a{
     justify-content: center;
     color: var(--main-text-color);
     align-items: center;
-    background: linear-gradient(270deg, rgb(247, 247, 247) 67.19%, rgba(247, 247, 247, 0.00) 100%);
-    /* background-image: linear-gradient(to right, rgba(247, 247, 247, 0), rgba(247, 247, 247, 1)); */
+    background: linear-gradient(270deg, rgb(247, 247, 247) 67.19%, rgba(247, 247, 247, 0.00) 100%); 
 }
 .video-card {
     grid-area: card1;
@@ -486,18 +487,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* .profile2 {
-    background-image: url(/HTML/YT-clone/Images/profile-2.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.profile2 {
-    background-image: url(/HTML/YT-clone/Images/profile-2.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
+
 
 .video1 {
     background-image: url(./Youtube-image/thumbnail-1.jpeg);
