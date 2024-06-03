@@ -268,28 +268,28 @@ a{
 }
 
 .Oktay{
-    background-image: url(../Images/estate\ image.jpeg);
+    background-image: url(./Youtube-image/profile4.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .Arnold{
-    background-image: url(/HTML/YT-clone/Images/Arnold-morrison.jpeg);
+    background-image: url(./Youtube-image/profile2.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .Hudson{
-    background-image: url(/HTML/YT-clone/Images/Hudson-snyder.jpeg);
+    background-image: url(./Youtube-image/thumbnail-6.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .Thomas{
-    background-image: url(/HTML/YT-clone/Images/Thomas-burns.jpeg);
+    background-image: url(./Youtube-image/thumbnail-4.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -426,62 +426,67 @@ a{
 
 
 .profile1{
-    background-image: url(/HTML/YT-clone/Images/profile-1.jpeg);
+    background-image: url(./Youtube-image/profile1.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .profile2 {
-    background-image: url(/HTML/YT-clone/Images/profile-2.jpeg);
+    background-image: url(./Youtube-image/profile2.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .profile3 {
-    background-image: url(/HTML/YT-clone/Images/profile-3.jpeg);
+    background-image: url(./Youtube-image/profile3.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .profile4 {
-    background-image: url(/HTML/YT-clone/Images/profile-4.jpeg);
+    background-image: url(./Youtube-image/profile4.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .profile5 {
-    background-image: url(/HTML/YT-clone/Images/profile-5.jpeg);
+    background-image: url(./Youtube-image/profile5.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .profile6 {
-    background-image: url(/HTML/YT-clone/Images/profile-6.jpeg);
+    background-image: url(./Youtube-image/profile6.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .profile7 {
-    background-image: url(/HTML/YT-clone/Images/profile-7.jpeg);
+    background-image: url(./Youtube-image/profile7.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .profile8 {
-    background-image: url(/HTML/YT-clone/Images/profile-8.jpeg);
+    background-image: url(./Youtube-image/profile8.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .profile9 {
-    background-image: url(/HTML/YT-clone/Images/profile-9.jpeg);
+    background-image: url(./Youtube-image/profile9.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .profile10 {
-    background-image: url(/HTML/YT-clone/Images/profile-9.jpeg);
+    background-image: url(./Youtube-image/profile10.jpeg); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* .profile2 {
     background-image: url(/HTML/YT-clone/Images/profile-2.jpeg);
     background-position: center;
     background-size: cover;
@@ -492,93 +497,87 @@ a{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-.profile2 {
-    background-image: url(/HTML/YT-clone/Images/profile-2.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+} */
 
 .video1 {
-    background-image: url(/HTML/YT-clone/Images/video\ 1.jpeg);
+    background-image: url(./Youtube-image/thumbnail-1.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .video2 {
-    background-image: url(/HTML/YT-clone/Images/video\ 2.jpeg);
+    background-image: url(./Youtube-image/thumbnail-2.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .video3 {
-    background-image: url(/HTML/YT-clone/Images/video\ 3.jpeg);
+    background-image: url(./Youtube-image/thumbnail-3.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .video4 {
-    background-image: url(/HTML/YT-clone/Images/video\ 4.jpeg);
+    background-image: url(./Youtube-image/thumbnail-4.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .video5 {
-    background-image: url(/HTML/YT-clone/Images/video\ 5.jpeg);
+    background-image: url(./Youtube-image/thumbnail-5.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .video6 {
-    background-image: url(/HTML/YT-clone/Images/video-6.jpeg);
+    background-image: url(./Youtube-image/thumbnail-6.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .video7 {
-    background-image: url(/HTML/YT-clone/Images/video-7.jpeg);
+    background-image: url(./Youtube-image/thumbnail-7.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .video8 {
-    background-image: url(/HTML/YT-clone/Images/video-6.jpeg);
+    background-image: url(./Youtube-image/thumbnail-8.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .video9 {
-    background-image: url(/HTML/YT-clone/Images/video-9.jpeg);
+    background-image: url(./Youtube-image/thumbnail-9.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .video10 {
-    background-image: url(/HTML/YT-clone/Images/video-10.jpeg);
+    background-image: url(./Youtube-image/thumbnail-10.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .video11 {
-    background-image: url(/HTML/YT-clone/Images/video-11.jpeg);
+    background-image: url(./Youtube-image/thumbnail-11.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .video12 {
-    background-image: url(/HTML/YT-clone/Images/video-12.jpeg);
+    background-image: url(./Youtube-image/thumbnail-12.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
