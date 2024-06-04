@@ -365,7 +365,7 @@ a{
     background: linear-gradient(270deg, rgb(247, 247, 247) 67.19%, rgba(247, 247, 247, 0.00) 100%); 
 }
 .video-card {
-    grid-area: card1;
+    grid-area: c1;
     /* background-color: var(--main-text-color);  */
     display: flex;
     flex-direction: column;
