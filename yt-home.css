@@ -487,6 +487,18 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.profile11 {
+    background-image: url(./Youtube-image/profile10.jpeg); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.profile12 {
+    background-image: url(./Youtube-image/profile10.jpeg); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 .video1 {
@@ -567,7 +579,7 @@ a{
 }
 
 .video12 {
-    background-image: url(./Youtube-image/thumbnail-12.jpeg);
+    background-image: url(./Youtube-image/thumbnail-4.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -619,6 +631,11 @@ a{
 .channel-name {
     font-size: .875rem;
     color: var(--text-gray);
+    display: flex;
+    flex-direction: row;
+    column-gap: .25rem;
+    justify-content: start;
+    align-items: center;
     cursor: pointer;
 }
 
